@@ -1,0 +1,44 @@
+package step01.domain;
+//한 라인 주석
+/* 블록단위의 주석
+ * 1. 데이터를 자바 언어로 표현하는 방법 연습
+ * 2. 데이터 = 자바 관점(변수)
+ * 3. 로직
+ * 		1) 친구들 정보를프로그램화
+ * 			- 이름(문자열, String)
+ * 			- 거주지(문자열, String)
+ * 			- 나이(정수, int)
+ * 		2) 수정, 저장, 삭제
+ * 4. 고려 사항
+ * 		1) 친구들이 몇명?
+ * 5. 필수 암기 사항
+ * 		- 데이터 생성/삭제/수정/검색
+ * 		 create/delete/update/select
+ *      - CRUD [씨알유디]
+ *      	C[create]/R[select]/U[update]/D[delete]
+ * 6. 문법
+ * 		1) class 선언구
+ * 		2) 변수 선언, 변수 호출(사용)
+ * 			타입 변수명 [= 데이터];		//[]: 생략가능
+ * 		3) 객체 생성
+ * 			- 클래스는 객체가 아님
+ * 			- 메모리에서 실제 사용 가능한 구조는 데이터들을 보유한 메모리 점유
+ * 			   이 메모리는 수정, 삭제 등이 가능
+ * 			- 문법
+ * 				클래스타입 변수명 = new 클래스명()	//객체생성
+ */
+public class FriendVO {
+	
+	String name = "황인범";
+	String cellPhone = "000-0000-0000";
+	int age = 27;
+	
+	//java program의 start point 필수 메소드
+	
+	public static void main(String[] args) {
+		FriendVO p1 = new FriendVO();
+		System.out.println(p1);	//p1의 주소가 출력됨.
+		System.out.println(p1.name);
+	}
+
+}

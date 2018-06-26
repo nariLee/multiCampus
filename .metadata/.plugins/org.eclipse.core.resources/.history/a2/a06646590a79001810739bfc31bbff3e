@@ -1,0 +1,8 @@
+package step01.syntax;
+
+public class step01Method {
+
+	public static void main(String[] args) {
+		
+	}
+}
