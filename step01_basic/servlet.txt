@@ -1,0 +1,37 @@
+servlet 학습
+
+1. http
+	- 브라우저와 서버간의 통신시에 사용되는 약속(protocol)
+	- w3에서 관리
+	
+	
+2. 주요 API
+	- http 통신 로직을 이미 100% 다 반영해서 완벽하게 구현한 API들 다수 제공
+	  개발자들은 사용.
+	- http 통신 기반의 자바로 개발하는 웹 어플리케이션
+		1) client가 전송하는 데이터를 보유하게 되는 API
+			: HttpServletRequest
+		2) 접속한 client에게만 응답하는 기능의 API
+			: HttpServletResponse
+		3) http를 고려해서 구현한 상위 클래스로 제공 API
+			: HttpServlet
+			
+			
+	- 문제
+		servlet A객체수: HttpServletRequest객체수: HttpServletResponse객체수 : 접속한 client 수
+		= 1 : 100 : 100 : 100명
+		
+3. client가 server에 요청하는 방식(스펙)
+	1) get 방식
+		- client가 서버에 데이터 전송시 url에 데이터가 오픈되어 전송
+		- 데이터 양이 소량일때만 허용
+		- servlet API doGet()가 처리
+		- post라는 코드상의 명시 없이 url로 요청하는 모든 방식(default방식)
+			예: http://www.daum.net
+				http://www.google.com
+		
+	2) post 방식
+		- client가 서버에 데이터 전송시 데이터가 은닉되어 전송
+		- 데이터 양이 많을때 사용하는 방식
+		- servlet API doPost()가 처리
+		
