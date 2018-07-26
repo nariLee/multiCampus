@@ -19,8 +19,8 @@ public class StartView {
 		//controller.getDeptAll();
 		//controller.insert(new DeptDTO(7,"±³À°ºÎ","¿ª»ïµ¿"));
 		//controller.delete(6);
-		controller.getDeptAll();
-		//controller.getDept(30);
+		//controller.getDeptAll();
+		controller.getDept(30);
 	}
 
 }
